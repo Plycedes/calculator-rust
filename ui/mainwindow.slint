@@ -1,0 +1,26 @@
+import {LineEdit} from "std-widgets.slint";
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 550px;
+    background: #f2f2f200;
+    Rectangle {
+        border-radius: 20px;
+        border-width: 5px;
+        border-color: #646464;
+        width: 400px;
+        height: 550px;
+        background: #8d8d8d;
+        GridLayout {
+            padding-top: 30px;
+            padding-left: 20px;        
+            Row {
+                LineEdit {
+                    font-size: 30px;
+                    placeholder-text: "Hello";
+                    width: 360px;
+                    height: 60px;                                       
+                }
+            }
+        }
+    }  
+}
